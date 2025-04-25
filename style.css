@@ -11,10 +11,12 @@ body {
     padding: 20px;
 } 
 
+
 h1 {
     color: #101310;
     margin-bottom: 20px;
 }
+
 
 form {
     margin-bottom: 20px;
@@ -39,4 +41,48 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #7e1081;
+}
+
+
+ul#tarefa-lista {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+ul#tarefa-lista li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#tarefa-lista li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul#tarefa-lista li button:first-child {
+    background-color: #f44336;
+    color: white;
+}
+
+ul#tarefa-lista li button:first-child:hover {
+    background-color: #e53935;
+}
+
+ul#tarefa-lista li button:last-child {
+    background-color: #620a9c;
+    color: white;
+}
+
+ul#tarefa-lista li button:last-child:hover {
+    background-color: #620a9c;
 }
