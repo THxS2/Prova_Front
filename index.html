@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Lista de Tarefas</h1>
     <form id="tarefa-form">
-        <input type="texto" id="tarefa-input" placeholder="Digite uma tarefa" required>
+        <input type="text" id="tarefa-input" placeholder="Digite uma tarefa" required>
         <button type="submit">Adicionar Tarefa</button>
     </form>
     <ul id="tarefa-lista"></ul>
 
-    <button id="limpar-lista" style="mostrar: none;">Limpar Lista</button>
+    <button id="limpar-lista" style="display: inline;">Limpar Lista</button>
 
-    <script src="script.js"></script>
+    <h2>Status das Tarefas</h2>
+    <p>Tarefas Pendentes: <span id="tarefas-pendentes">0</span></p>
+    <p>Tarefas Concluídas: <span id="tarefas-concluidas">0</span></p>
+
+    <button id="editar-tarefa" style="display: none;">Editar Tarefa</button>
+
+    <script src="main.js"></script>
 </body>
 </html>
