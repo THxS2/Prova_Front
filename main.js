@@ -48,12 +48,22 @@ document.addEventListener('DOMContentLoaded', () => {
             atualizarContagem();
         });
 
+        // Cria o botão de editar
+        const botaoEditar = document.createElement('button');
+        botaoEditar.textContent = 'Editar';
+        botaoEditar.style.marginLeft = '10px';
+        botaoEditar.addEventListener('click', () => {
+            const novoTexto = prompt('Edite a tarefa:', li.firstChild.textContent);
+            if (novoTexto !== null && novoTexto.trim() !== '') {
+                li.firstChild.textContent = novoTexto.trim();
+            }
+        });
+
         // Adiciona os botões ao item da lista
         li.appendChild(botaoExcluir);
         li.appendChild(botaoConcluir);
         li.appendChild(botaoEditar);
 
-        
         // Adiciona o item à lista
         lista.appendChild(li);
 
@@ -73,4 +83,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Atualiza a contagem inicial
     atualizarContagem();
 });
-
