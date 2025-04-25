@@ -36,3 +36,8 @@ form.addEventListener('submit', (event) => {
     // Limpa o campo de entrada
     input.value = '';
 });
+
+botaoLimpar.addEventListener('click', () => {
+    lista.innerHTML = '';
+    botaoLimpar.style.display = 'none';
+});
