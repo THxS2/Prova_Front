@@ -51,7 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Adiciona os botões ao item da lista
         li.appendChild(botaoExcluir);
         li.appendChild(botaoConcluir);
+        li.appendChild(botaoEditar);
 
+        
         // Adiciona o item à lista
         lista.appendChild(li);
 
@@ -71,3 +73,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Atualiza a contagem inicial
     atualizarContagem();
 });
+
