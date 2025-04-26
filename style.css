@@ -114,3 +114,42 @@ p {
 span {
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    ul#tarefa-lista li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul#tarefa-lista li button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    button[type="submit"], #limpar-lista {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    ul#tarefa-lista li {
+        padding: 8px;
+    }
+
+    ul#tarefa-lista li button {
+        font-size: 0.9rem;
+    }
+}
