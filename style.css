@@ -86,3 +86,18 @@ ul#tarefa-lista li button:last-child {
 ul#tarefa-lista li button:last-child:hover {
     background-color: #620a9c;
 }
+
+
+#limpar-lista {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#limpar-lista:hover {
+    background-color: #e53935;
+}
